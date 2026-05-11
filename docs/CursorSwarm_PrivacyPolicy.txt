@@ -1,0 +1,23 @@
+CursorSwarm Privacy Policy
+==========================
+
+Effective Version: CursorSwarm v10.9
+Copyright (C) 2026 Palugula Tharun Kumar.
+
+CursorSwarm does not collect, transmit, sell, rent, or share personal data.
+
+CursorSwarm is designed as a local Windows desktop app. It runs on your device and stores its settings locally.
+
+CursorSwarm does not use user accounts, cloud syncing, analytics, telemetry, advertising trackers, remote servers, or automatic data uploads.
+
+CursorSwarm may create local settings, presets, README, terms, release notes, and emergency restore files on your device. These files are stored locally. In normal portable EXE mode, they may be created beside CursorSwarm.exe. In MSIX mode, they are stored under the user's Local AppData folder.
+
+CursorSwarm reads local mouse movement and keyboard shortcut input only while the app is running, in order to provide cursor effects, mirror movement, Safe Mode, and safe quit controls.
+
+CursorSwarm does not need internet access for its core features and does not intentionally contact external servers.
+
+You can delete CursorSwarm's local settings files to reset the app. You can uninstall CursorSwarm using Windows Settings, the installer uninstaller, or the MSIX uninstall flow depending on how it was installed.
+
+Future versions may update this policy if the app changes.
+
+No public support email or website is configured for this release.

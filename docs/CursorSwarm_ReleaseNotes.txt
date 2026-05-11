@@ -1,0 +1,35 @@
+CursorSwarm v10.9 Release Notes
+===============================
+
+Release type: Microsoft Store certification follow-up and visible-control polish
+
+Highlights:
+
+- Updated app version to v10.9.
+- Added a small draggable floating CS control button.
+- The floating CS button can reopen or focus the Control Panel when clicked.
+- Control Panel still opens automatically when the app launches.
+- Ctrl + Alt + C still works as the keyboard shortcut to show or hide the Control Panel.
+- Temporary shortcut hint remains visible when the Control Panel is hidden.
+- Standalone emergency restore EXE support remains included.
+- Installer script still creates only one Start Menu shortcut: CursorSwarm.
+
+Certification-focused changes:
+
+- The main product UI is visible immediately after launch.
+- A visible floating on-screen control remains available for reopening/focusing the Control Panel.
+- The shortcut to reopen the Control Panel is shown to users when the panel is hidden.
+- Extra installed documents/tools are not exposed as separate Start Menu tiles in the installer script.
+
+Recommended testing:
+
+1. Build CursorSwarm.exe v10.9.
+2. Build or reuse restore_cursor_emergency.exe.
+3. Install with the v10.9 installer.
+4. Confirm only CursorSwarm appears in the Start Menu.
+5. Launch CursorSwarm and confirm the Control Panel opens automatically.
+6. Confirm the floating CS button is visible.
+7. Hide the Control Panel and confirm the temporary shortcut hint appears.
+8. Click the floating CS button and confirm the Control Panel opens/focuses.
+9. Test Ctrl + Alt + C, Ctrl + Alt + Space, and Ctrl + Alt + Q.
+10. Build the Store-identity MSIX and resubmit with certification notes.
