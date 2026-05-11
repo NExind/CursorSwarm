@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Build outputs
+build/
+dist/
+*.spec
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# App/package outputs
+*.exe
+*.msix
+*.msixbundle
+*.appx
+*.appxbundle
+
+# Certificates / private keys
+*.pfx
+*.cer
+*.key
+*.pem
+
+# Local app data / configs
+cursor_presets.json
+cursor_config.json
+CursorSwarm_settings.json
