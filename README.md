@@ -17,7 +17,7 @@ CursorSwarm is available through its Microsoft Store listing.
 The Microsoft Store link can be added here after copying the exact Store URL:
 
 ```text
-Microsoft Store: STORE_LINK_HERE
+[Download CursorSwarm on the Microsoft Store](https://apps.microsoft.com/detail/9MSN2VZMJVMW?hl=en-us&gl=US&ocid=pdpshare)
 ```
 
 ## Features
