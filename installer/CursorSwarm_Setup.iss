@@ -1,5 +1,5 @@
 #define MyAppName "CursorSwarm"
-#define MyAppVersion "10.9.0"
+#define MyAppVersion "11.0.0"
 #define MyAppPublisher "Palugula Tharun Kumar"
 #define MyAppExeName "CursorSwarm.exe"
 
@@ -13,7 +13,7 @@ DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
 PrivilegesRequired=lowest
 OutputDir=Output
-OutputBaseFilename=CursorSwarm_Setup_v10_9
+OutputBaseFilename=CursorSwarm_Setup_v11_0
 SetupIconFile=cursor_swarm.ico
 Compression=lzma2
 SolidCompression=yes
@@ -46,7 +46,8 @@ Filename: "{app}\CursorSwarm.exe"; Description: "Launch CursorSwarm"; Flags: now
 [UninstallDelete]
 Type: files; Name: "{app}\cursor_presets.json"
 Type: files; Name: "{app}\cursor_settings.json"
-Type: files; Name: "{app}\restore_cursor_emergency.py"
+Type: files; Name: "{app}
+estore_cursor_emergency.py"
 Type: files; Name: "{app}\README.txt"
 Type: files; Name: "{app}\CursorSwarm_PrivacyPolicy.txt"
 Type: files; Name: "{app}\CursorSwarm_TermsAndSafety.txt"

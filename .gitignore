@@ -21,6 +21,7 @@ desktop.ini
 # App/package outputs
 *.exe
 *.msix
+*.msixupload
 *.msixbundle
 *.appx
 *.appxbundle
@@ -34,4 +35,8 @@ desktop.ini
 # Local app data / configs
 cursor_presets.json
 cursor_config.json
+cursor_settings.json
 CursorSwarm_settings.json
+cursor_themes.json
+cursor_shape_profiles.json
+custom_multi_colour_presets.json

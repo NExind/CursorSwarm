@@ -1,7 +1,7 @@
 CursorSwarm Terms and Safety Notice
 ===================================
 
-Effective Version: CursorSwarm v10.9
+Effective Version: CursorSwarm v11.0
 Copyright (C) 2026 Palugula Tharun Kumar.
 
 CursorSwarm is a Windows cursor effects app made for fun, experimentation, and visual cursor confusion.
@@ -22,6 +22,8 @@ If your cursor is still hidden after closing the app, run:
 restore_cursor_emergency.exe
 
 The standalone emergency restore EXE does not require Python to be installed.
+
+v11.0 modernizes the Control Panel UI with CustomTkinter, but the same safety expectations apply. Stronger modes can still hide or visually confuse the cursor.
 
 By using CursorSwarm, you understand that the app intentionally changes cursor visibility and movement behavior. You are responsible for using Safe Mode, Quit Safely, the floating control button, keyboard shortcuts, and the emergency restore tool when needed.
 

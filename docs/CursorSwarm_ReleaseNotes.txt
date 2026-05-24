@@ -1,35 +1,59 @@
-CursorSwarm v10.9 Release Notes
+CursorSwarm v11.0 Release Notes
 ===============================
 
-Release type: Microsoft Store certification follow-up and visible-control polish
+Release type: UI modernization and documentation polish
 
 Highlights:
 
-- Updated app version to v10.9.
-- Added a small draggable floating CS control button.
-- The floating CS button can reopen or focus the Control Panel when clicked.
-- Control Panel still opens automatically when the app launches.
-- Ctrl + Alt + C still works as the keyboard shortcut to show or hide the Control Panel.
-- Temporary shortcut hint remains visible when the Control Panel is hidden.
-- Standalone emergency restore EXE support remains included.
-- Installer script still creates only one Start Menu shortcut: CursorSwarm.
+- Updated app version to v11.0.
+- Redesigned the Control Panel using a modern CustomTkinter dark UI.
+- Kept the Store-approved v10.9 cursor engine behavior unchanged.
+- Kept the floating CS control button for reopening/focusing the Control Panel.
+- Kept automatic Control Panel launch on app startup.
+- Kept Ctrl + Alt + C as the keyboard shortcut to show or hide the Control Panel.
+- Kept Safe Mode, safe quit, mirror controls, presets, and emergency restore support.
+- Updated the external README from old v10.8 text to v11.0.
+- Updated privacy policy, terms/safety notice, release notes, certification notes, version metadata, and installer script to v11.0.
 
-Certification-focused changes:
+UI changes:
 
-- The main product UI is visible immediately after launch.
-- A visible floating on-screen control remains available for reopening/focusing the Control Panel.
-- The shortcut to reopen the Control Panel is shown to users when the panel is hidden.
-- Extra installed documents/tools are not exposed as separate Start Menu tiles in the installer script.
+- New CustomTkinter tabbed Control Panel.
+- Dark card-style sections for Dashboard, Cursor, Mirror, Swarm, Presets, Safety, and Advanced controls.
+- Cleaner buttons for Safe Mode, Restore Cursor, Quit Safely, and other important actions.
+- Larger Control Panel default size for better readability.
+- Improved appearance for Microsoft Store screenshots.
+
+Core behavior intentionally unchanged:
+
+- Cursor overlay drawing remains based on the existing Tkinter transparent overlay/canvas engine.
+- Raw input mirror movement remains unchanged.
+- Global hotkeys remain unchanged.
+- Cursor backup, transparent cursor, restore, and emergency recovery behavior remain unchanged.
+- Floating CS button behavior remains unchanged except for documentation/version polish.
+
+Build note:
+
+CursorSwarm v11.0 requires CustomTkinter when building/running from source.
+
+Install dependencies:
+
+pip install customtkinter pillow
+
+Recommended PyInstaller command:
+
+pyinstaller --onefile --noconsole --icon=cursor_swarm.ico --version-file=cursor_swarm_version_info_v11_0.txt --collect-data customtkinter cursor_swarm_v11_0.py
 
 Recommended testing:
 
-1. Build CursorSwarm.exe v10.9.
-2. Build or reuse restore_cursor_emergency.exe.
-3. Install with the v10.9 installer.
-4. Confirm only CursorSwarm appears in the Start Menu.
-5. Launch CursorSwarm and confirm the Control Panel opens automatically.
-6. Confirm the floating CS button is visible.
-7. Hide the Control Panel and confirm the temporary shortcut hint appears.
-8. Click the floating CS button and confirm the Control Panel opens/focuses.
-9. Test Ctrl + Alt + C, Ctrl + Alt + Space, and Ctrl + Alt + Q.
-10. Build the Store-identity MSIX and resubmit with certification notes.
+1. Run CursorSwarm v11.0 from source.
+2. Confirm the new CustomTkinter Control Panel opens automatically.
+3. Confirm the transparent overlay and fake cursors still draw correctly.
+4. Confirm the floating CS button appears when the Control Panel is hidden.
+5. Test Ctrl + Alt + C, Ctrl + Alt + Space, Ctrl + Alt + Q, Ctrl + Alt + R, Ctrl + Alt + M, Ctrl + Alt + X/Y, Ctrl + Alt + P, Ctrl + Alt + H, and Ctrl + Alt + D.
+6. Test built-in presets and custom presets.
+7. Test README/release document generation from the Advanced tab.
+8. Build CursorSwarm.exe v11.0.
+9. Build or reuse restore_cursor_emergency.exe.
+10. Install with the v11.0 installer.
+11. Confirm only CursorSwarm appears in the Start Menu.
+12. Build the Store-identity MSIX with package version 11.0.0.0 if submitting this update to Microsoft Store.

@@ -1,7 +1,7 @@
 CursorSwarm Privacy Policy
 ==========================
 
-Effective Version: CursorSwarm v10.9
+Effective Version: CursorSwarm v11.0
 Copyright (C) 2026 Palugula Tharun Kumar.
 
 CursorSwarm does not collect, transmit, sell, rent, or share personal data.
@@ -10,9 +10,11 @@ CursorSwarm is designed as a local Windows desktop app. It runs on your device a
 
 CursorSwarm does not use user accounts, cloud syncing, analytics, telemetry, advertising trackers, remote servers, or automatic data uploads.
 
-CursorSwarm may create local settings, presets, README, terms, release notes, and emergency restore files on your device. These files are stored locally. In normal portable EXE mode, they may be created beside CursorSwarm.exe. In MSIX mode, they are stored under the user's Local AppData folder.
+CursorSwarm may create local settings, presets, README, terms, release notes, and emergency restore files on your device. These files are stored locally. In normal portable EXE mode, they may be created beside CursorSwarm.exe. In MSIX / Microsoft Store mode, they are stored under the user's Local AppData folder.
 
 CursorSwarm reads local mouse movement and keyboard shortcut input only while the app is running, in order to provide cursor effects, mirror movement, Safe Mode, and safe quit controls.
+
+CursorSwarm v11.0 uses CustomTkinter for the local Control Panel UI. This UI change does not add accounts, internet access, telemetry, analytics, ads, cloud syncing, or remote data uploads.
 
 CursorSwarm does not need internet access for its core features and does not intentionally contact external servers.
 

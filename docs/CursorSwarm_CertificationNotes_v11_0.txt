@@ -1,0 +1,37 @@
+CursorSwarm v11.0 certification notes
+=====================================
+
+CursorSwarm v11.0 is a UI modernization update built on the Store-approved v10.9 behavior.
+
+The main change in v11.0 is that the Control Panel has been redesigned with a CustomTkinter dark UI. The cursor effects engine, floating CS control button behavior, global keyboard shortcuts, Safe Mode, safe quit, and emergency restore behavior remain unchanged from the accepted v10.9 release.
+
+CursorSwarm launches into a visible Control Panel in Safe Mode. The Control Panel opens automatically at startup so the primary app UI is visible immediately.
+
+CursorSwarm also includes a small draggable floating "CS" control button. This button remains available when the Control Panel is hidden and can be clicked to reopen or focus the Control Panel. Users can also use Ctrl + Alt + C as a keyboard shortcut.
+
+Primary functionality test steps:
+
+1. Launch CursorSwarm from the Start Menu.
+2. The CursorSwarm Control Panel opens automatically.
+3. Confirm the new CustomTkinter Control Panel UI is visible.
+4. Confirm the floating "CS" control button is visible when the Control Panel is hidden.
+5. Use the Dashboard tab for quick controls.
+6. Use Ctrl + Alt + C to show or hide the Control Panel.
+7. When the Control Panel is hidden, CursorSwarm briefly displays: "Control Panel hidden. Press Ctrl + Alt + C to open it again."
+8. Click the floating "CS" button to reopen or focus the Control Panel.
+9. Use Ctrl + Alt + Space to enable Safe Mode or resume the previous mode.
+10. Use Ctrl + Alt + Q to quit safely and restore the system cursor.
+11. Use the Swarm tab to adjust fake cursor counts and visual cursor effects.
+12. Use the Mirror tab to test mirror mouse movement.
+13. Use the Presets tab to load built-in or custom presets.
+14. Use the Safety tab for startup/recovery options.
+
+CursorSwarm is a local Windows cursor effects app. It creates fake cursor visuals, mirror movement, and cursor camouflage effects. It includes Safe Mode, safe quit, visible startup controls, a floating control button, and emergency restore options.
+
+Privacy and data handling:
+
+CursorSwarm stores settings and presets locally. It does not use accounts, cloud syncing, analytics, telemetry, advertising, or automatic data uploads. v11.0's CustomTkinter UI change does not add internet access or remote services.
+
+Start Menu tile note:
+
+The v11.0 installer script creates only one Start Menu shortcut: CursorSwarm. Support documents and recovery files are installed with the app and are accessible from the installed folder and the app's Advanced tab, but they are not exposed as separate Start Menu tiles.

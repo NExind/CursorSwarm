@@ -1,62 +1,88 @@
 # CursorSwarm
 
-CursorSwarm is a Windows desktop visual effects app that creates cursor swarm overlays, mirror movement effects, and customizable cursor presets.
+CursorSwarm is a Windows desktop cursor effects app for fake cursor swarms, mirror movement, transparent cursor modes, presets, and visual cursor camouflage.
+
+It is made for fun, experimentation, and user-controlled visual cursor effects.
 
 ## Latest Version
 
-**CursorSwarm v10.9**
+**CursorSwarm v11.0**
 
-CursorSwarm v10.9 is the Microsoft Store-ready release focused on clearer controls, better visibility, and safer user access to the Control Panel.
+CursorSwarm v11.0 is the current Microsoft Store release. It modernizes the Control Panel with a CustomTkinter dark UI while keeping the Store-approved v10.9 cursor engine behavior unchanged.
+
+## Download
+
+CursorSwarm is available through its Microsoft Store listing.
+
+The Microsoft Store link can be added here after copying the exact Store URL:
+
+```text
+Microsoft Store: STORE_LINK_HERE
+```
 
 ## Features
 
 - Fake cursor swarm visual effects
 - Mirror movement mode
-- Customizable cursor presets
+- Transparent real cursor modes
 - Runtime Control Panel
+- Modern CustomTkinter dark UI
 - Floating **CS** control button
-- Global shortcut support
-- Cursor visibility toggle and restore support
-- Panic/safe mode support
+- Global keyboard shortcuts
+- Cursor presets
+- Safe Mode and safe quit support
+- Emergency cursor restore support
 - Local desktop-only functionality
 
-## What’s New in v10.9
+## What’s New in v11.0
 
-- Control Panel opens automatically on launch
-- Floating **CS** button appears when the Control Panel is hidden
-- Clicking the **CS** button opens the Control Panel
-- Right-click menu on the **CS** button with:
-  - Open Control Panel
-  - Hide Floating Button
-- `Ctrl + Alt + C` still toggles the Control Panel
-- Only the main CursorSwarm shortcut is exposed in the Start Menu
-- Updated certification notes and full-trust desktop explanation
-
-## Important Notes
-
-CursorSwarm is a local Windows desktop app.
-
-It does **not** collect personal data, upload files, record user activity, or send data to a server.
-
-The app may require full desktop access because it uses Windows desktop overlay behavior, local mouse movement handling, global keyboard shortcuts, and cursor visibility control for its core visual effects.
+- Redesigned the Control Panel using a modern CustomTkinter dark UI
+- Kept the Store-approved v10.9 cursor engine behavior unchanged
+- Kept the floating **CS** button for reopening/focusing the Control Panel
+- Kept automatic Control Panel launch on startup
+- Kept `Ctrl + Alt + C` for showing/hiding the Control Panel
+- Kept Safe Mode, safe quit, mirror controls, presets, and emergency restore support
+- Updated README, release notes, privacy policy, terms/safety notice, certification notes, installer script, and version metadata to v11.0
 
 ## Safety and Restore Controls
 
-CursorSwarm includes safety controls so users can return the cursor to normal if cursor effects are enabled.
+CursorSwarm can make the cursor harder to see or control. Stronger modes should not be used during important work, payments, exams, accessibility-dependent tasks, system configuration, or anything where cursor accuracy matters.
 
-If the Control Panel is hidden, the floating **CS** button can be used to bring it back. The keyboard shortcut `Ctrl + Alt + C` can also be used to toggle the Control Panel.
+Important controls:
+
+```text
+Ctrl + Alt + C      = Open / close Control Panel
+Floating CS button  = Reopen or focus Control Panel
+Ctrl + Alt + Space  = Safe Mode / Resume Previous Mode
+Ctrl + Alt + Q      = Quit Safely and restore cursor
+Ctrl + Alt + R      = Toggle real system cursor visible / transparent
+```
+
+If the cursor is still hidden after closing the app, use the emergency restore helper included with the packaged release.
+
+## Privacy
+
+CursorSwarm is a local Windows desktop app. It does **not** collect, transmit, sell, rent, or share personal data.
+
+The app stores settings and preset files locally on the user’s device. It does not use user accounts, cloud syncing, analytics, telemetry, advertising trackers, or remote servers.
+
+## Repository Structure
+
+```text
+src/                         Main Python source files
+docs/                        README, release notes, privacy, and safety documents
+installer/                   Inno Setup installer script
+packaging/                   PyInstaller version metadata
+release_notes/               GitHub release draft notes
+```
 
 ## Built With
 
 - Python
-- Tkinter / Custom UI logic
+- Tkinter / CustomTkinter
 - Windows APIs
 - PyInstaller
-- Inno Setup / MSIX packaging tools
-
-## Download
-
-The Windows executable and installer are available from the GitHub Releases section.
+- Inno Setup / MSIX Packaging Tool
 
 ## Author
 
