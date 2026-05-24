@@ -12,13 +12,9 @@ CursorSwarm v11.0 is the current Microsoft Store release. It modernizes the Cont
 
 ## Download
 
-CursorSwarm is available through its Microsoft Store listing.
-
-The Microsoft Store link can be added here after copying the exact Store URL:
-
-```text
 [Download CursorSwarm on the Microsoft Store](https://apps.microsoft.com/detail/9MSN2VZMJVMW?hl=en-us&gl=US&ocid=pdpshare)
-```
+
+For source code, release notes, and development updates, see this GitHub repository.
 
 ## Features
 
