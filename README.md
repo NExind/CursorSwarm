@@ -10,7 +10,7 @@ CursorSwarm v13.12 is the stable release checkpoint prepared for Microsoft Store
 
 ## Download
 
-Microsoft Store link: [text](https://apps.microsoft.com/detail/9MSN2VZMJVMW?hl=en-us&gl=US&ocid=pdpshare)
+[Download CursorSwarm on the Microsoft store](https://apps.microsoft.com/detail/9MSN2VZMJVMW?hl=en-us&gl=US&ocid=pdpshare)
 
 For normal users, the Microsoft Store version is the recommended install method once the listing is live.
 
