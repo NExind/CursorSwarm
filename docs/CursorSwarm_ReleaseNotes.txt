@@ -1,59 +1,32 @@
-CursorSwarm v11.0 Release Notes
-===============================
+CursorSwarm v13.12 Release Notes
+================================
 
-Release type: UI modernization and documentation polish
+Release type: Final polish and release-prep checkpoint
 
 Highlights:
+- Updated app version to v13.12.
+- Refreshed generated README, release notes, privacy policy, terms/safety notice, and emergency restore helper text.
+- Updated build references to v13.12 file/version-info names.
+- Added clearer packaging and Microsoft Store runFullTrust notes to the README.
+- Cleaned final release wording for the full v13 feature set.
+- Fixed a small Advanced tab button layout overlap in the Config / Backup section.
+- Expanded Stability Check output to report release document presence.
 
-- Updated app version to v11.0.
-- Redesigned the Control Panel using a modern CustomTkinter dark UI.
-- Kept the Store-approved v10.9 cursor engine behavior unchanged.
-- Kept the floating CS control button for reopening/focusing the Control Panel.
-- Kept automatic Control Panel launch on app startup.
-- Kept Ctrl + Alt + C as the keyboard shortcut to show or hide the Control Panel.
-- Kept Safe Mode, safe quit, mirror controls, presets, and emergency restore support.
-- Updated the external README from old v10.8 text to v11.0.
-- Updated privacy policy, terms/safety notice, release notes, certification notes, version metadata, and installer script to v11.0.
+Major implemented feature areas covered in this release:
+- CustomTkinter Control Panel and fixed two-row main tab layout.
+- Floating CS button and recovery hotkeys.
+- Cursor Lab with custom image cursor, manual cursor shape library, real Windows ANI Busy/Working cursors, generated fallback cursor shapes/spinners, tint, bright neon tint, multi-colour tint, black outline, resize, and hotspot/offset controls.
+- Idle effects: Pulse, Glow Ring, Fade, and Wobble.
+- Movement effects: Motion Trail, Speed Glow, Motion Streak, Spark Particles, Ripple Burst, Comet Tail, Speed Lines, and Magnetic Orbit.
+- Click Effects with left/right click support and ripple/burst/sparks styles.
+- Presets & Themes with built-in presets, custom presets, full cursor themes, startup behavior, and full backup support.
+- Custom Multi-Colour Presets with 10 slots, import/export/reset, and shared dropdown integration.
+- Performance tab with target overlay FPS, Battery Saver Glow Mode, long-idle fake cursor hiding, and long-idle idle effect pause.
+- Stability improvements including safer JSON writes/loads, broken JSON backup handling, preset fallback validation, and expanded Run Stability Check.
 
-UI changes:
-
-- New CustomTkinter tabbed Control Panel.
-- Dark card-style sections for Dashboard, Cursor, Mirror, Swarm, Presets, Safety, and Advanced controls.
-- Cleaner buttons for Safe Mode, Restore Cursor, Quit Safely, and other important actions.
-- Larger Control Panel default size for better readability.
-- Improved appearance for Microsoft Store screenshots.
-
-Core behavior intentionally unchanged:
-
-- Cursor overlay drawing remains based on the existing Tkinter transparent overlay/canvas engine.
-- Raw input mirror movement remains unchanged.
-- Global hotkeys remain unchanged.
-- Cursor backup, transparent cursor, restore, and emergency recovery behavior remain unchanged.
-- Floating CS button behavior remains unchanged except for documentation/version polish.
-
-Build note:
-
-CursorSwarm v11.0 requires CustomTkinter when building/running from source.
-
-Install dependencies:
-
-pip install customtkinter pillow
-
-Recommended PyInstaller command:
-
-pyinstaller --onefile --noconsole --icon=cursor_swarm.ico --version-file=cursor_swarm_version_info_v11_0.txt --collect-data customtkinter cursor_swarm_v11_0.py
-
-Recommended testing:
-
-1. Run CursorSwarm v11.0 from source.
-2. Confirm the new CustomTkinter Control Panel opens automatically.
-3. Confirm the transparent overlay and fake cursors still draw correctly.
-4. Confirm the floating CS button appears when the Control Panel is hidden.
-5. Test Ctrl + Alt + C, Ctrl + Alt + Space, Ctrl + Alt + Q, Ctrl + Alt + R, Ctrl + Alt + M, Ctrl + Alt + X/Y, Ctrl + Alt + P, Ctrl + Alt + H, and Ctrl + Alt + D.
-6. Test built-in presets and custom presets.
-7. Test README/release document generation from the Advanced tab.
-8. Build CursorSwarm.exe v11.0.
-9. Build or reuse restore_cursor_emergency.exe.
-10. Install with the v11.0 installer.
-11. Confirm only CursorSwarm appears in the Start Menu.
-12. Build the Store-identity MSIX with package version 11.0.0.0 if submitting this update to Microsoft Store.
+Notes:
+- This patch is intended as a release-prep checkpoint. It does not intentionally add new visual effects.
+- v13.11.1 fixed the custom multi-colour helper startup NameError.
+- v13.11.2 added safer JSON handling and expanded stability checks.
+- v13.11.3 refreshed generated documentation/release text.
+- v13.12 polishes release readiness and packaging notes for the current stable v13 feature set.

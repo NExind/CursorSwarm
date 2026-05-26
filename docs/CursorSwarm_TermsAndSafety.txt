@@ -1,34 +1,21 @@
 CursorSwarm Terms and Safety Notice
 ===================================
 
-Effective Version: CursorSwarm v11.0
+Effective Version: CursorSwarm v13.12
 Copyright (C) 2026 Palugula Tharun Kumar.
 
-CursorSwarm is a Windows cursor effects app made for fun, experimentation, and visual cursor confusion.
+CursorSwarm is a Windows cursor effects app made for fun, experimentation, visual customization, and cursor confusion effects.
 
-CursorSwarm can make your cursor difficult to see or control. Do not use stronger modes while performing important, sensitive, or high-risk tasks, including payments, exams, accessibility-dependent tasks, system configuration tasks, or work where cursor accuracy is important.
+CursorSwarm can hide the real Windows cursor, draw replacement cursors, display fake cursors, show movement/click/idle effects, and change how the cursor appears visually. Use stronger modes carefully and avoid enabling confusing modes during important work, online exams, presentations, accessibility-critical tasks, or any situation where losing cursor visibility may cause problems.
 
 Important recovery controls:
-
 Ctrl + Alt + C      = Open / close Control Panel
 Floating CS button  = Reopen or focus Control Panel
 Ctrl + Alt + Space  = Safe Mode / Resume Previous Mode
 Ctrl + Alt + Q      = Quit Safely and restore cursor
 Ctrl + Alt + R      = Toggle real system cursor visible / transparent
-Hold Shift          = Temporary cursor hint / normal movement behavior in some modes
+Hold Shift          = Temporary cursor hint / normal movement in some modes
 
-If your cursor is still hidden after closing the app, run:
+If the cursor remains hidden after closing CursorSwarm, run restore_cursor_emergency.exe or restore_cursor_emergency.py to request Windows to reload the normal cursor scheme.
 
-restore_cursor_emergency.exe
-
-The standalone emergency restore EXE does not require Python to be installed.
-
-v11.0 modernizes the Control Panel UI with CustomTkinter, but the same safety expectations apply. Stronger modes can still hide or visually confuse the cursor.
-
-By using CursorSwarm, you understand that the app intentionally changes cursor visibility and movement behavior. You are responsible for using Safe Mode, Quit Safely, the floating control button, keyboard shortcuts, and the emergency restore tool when needed.
-
-Do not use CursorSwarm to mislead, disrupt, or interfere with another person's computer use.
-
-CursorSwarm is provided as-is, without warranty of any kind. The developer is not responsible for data loss, interrupted work, user error, or device-specific issues caused by misuse or unexpected behavior.
-
-CursorSwarm is designed to run locally and does not collect, upload, sell, or share personal data. See CursorSwarm_PrivacyPolicy.txt for details.
+CursorSwarm is provided as a local desktop utility. The user is responsible for testing settings safely and keeping the emergency restore helper available.

@@ -25,6 +25,7 @@ desktop.ini
 *.msixbundle
 *.appx
 *.appxbundle
+*.appxupload
 
 # Certificates / private keys
 *.pfx
@@ -38,5 +39,21 @@ cursor_config.json
 cursor_settings.json
 CursorSwarm_settings.json
 cursor_themes.json
+cursor_color_presets.json
 cursor_shape_profiles.json
-custom_multi_colour_presets.json
+cursor_swarm_full_backup_*.json
+cursor_swarm_theme_*.json
+cursor_swarm_preset_*.json
+cursor_swarm_custom_multi_colour_presets.json
+cursor_presets_before_import_*.json
+cursor_settings_before_import_*.json
+cursor_themes_before_import_*.json
+cursor_color_presets_before_import_*.json
+
+# Generated runtime documents if the app is run from the source folder
+src/README.txt
+src/CursorSwarm_PrivacyPolicy.txt
+src/CursorSwarm_TermsAndSafety.txt
+src/CursorSwarm_ReleaseNotes.txt
+src/restore_cursor_emergency.py
+src/restore_cursor_emergency.exe

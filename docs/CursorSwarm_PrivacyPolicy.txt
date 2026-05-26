@@ -1,25 +1,26 @@
 CursorSwarm Privacy Policy
 ==========================
 
-Effective Version: CursorSwarm v11.0
+Effective Version: CursorSwarm v13.12
 Copyright (C) 2026 Palugula Tharun Kumar.
 
 CursorSwarm does not collect, transmit, sell, rent, or share personal data.
 
-CursorSwarm is designed as a local Windows desktop app. It runs on your device and stores its settings locally.
+CursorSwarm is designed to run locally on the user's Windows device. It does not require an account, does not send analytics, and does not upload cursor images, settings, themes, presets, movement effect settings, click effect settings, or custom colour presets.
 
-CursorSwarm does not use user accounts, cloud syncing, analytics, telemetry, advertising trackers, remote servers, or automatic data uploads.
+CursorSwarm may store local files on the device, including:
+- cursor_settings.json
+- cursor_presets.json
+- cursor_themes.json
+- cursor_color_presets.json
+- README.txt
+- Release_Notes.txt
+- Privacy_Policy.txt
+- Terms_and_Safety.txt
+- restore_cursor_emergency.py / restore_cursor_emergency.exe
 
-CursorSwarm may create local settings, presets, README, terms, release notes, and emergency restore files on your device. These files are stored locally. In normal portable EXE mode, they may be created beside CursorSwarm.exe. In MSIX / Microsoft Store mode, they are stored under the user's Local AppData folder.
+These files are used only for local app settings, recovery, themes, presets, and documentation. If CursorSwarm is installed as an MSIX/package where the install folder is read-only, these files may be stored in the user's local app data folder instead of beside the executable.
 
-CursorSwarm reads local mouse movement and keyboard shortcut input only while the app is running, in order to provide cursor effects, mirror movement, Safe Mode, and safe quit controls.
+Custom images, cursor files, and ANI cursor files are used locally for Cursor Lab. File paths may be stored locally so the app can reload user-selected settings, but CursorSwarm does not upload those files or paths.
 
-CursorSwarm v11.0 uses CustomTkinter for the local Control Panel UI. This UI change does not add accounts, internet access, telemetry, analytics, ads, cloud syncing, or remote data uploads.
-
-CursorSwarm does not need internet access for its core features and does not intentionally contact external servers.
-
-You can delete CursorSwarm's local settings files to reset the app. You can uninstall CursorSwarm using Windows Settings, the installer uninstaller, or the MSIX uninstall flow depending on how it was installed.
-
-Future versions may update this policy if the app changes.
-
-No public support email or website is configured for this release.
+CursorSwarm uses local Windows APIs for cursor display, hotkeys, mouse state, overlay drawing, and recovery. These APIs are used to provide the app's visual cursor effects and safety controls.

@@ -1,0 +1,14 @@
+CursorSwarm is a packaged Win32/Python desktop application and requires runFullTrust for its local desktop cursor features.
+
+Testing instructions:
+1. Launch CursorSwarm from the Start Menu shortcut.
+2. The Control Panel should open automatically.
+3. Open Cursor Lab, Movement, Click Effects, Presets & Themes, Performance, and Advanced tabs.
+4. Click Run Stability Check from the app to verify configuration and safety status.
+5. Test basic visual cursor effects, then use Quit Safely to restore the normal Windows cursor before closing.
+
+CursorSwarm uses runFullTrust only for local desktop cursor functionality, including visual cursor overlay effects, fake cursor swarms, Cursor Lab customization, movement/click effects, global hotkeys, local settings/preset storage, and safe cursor restore behavior.
+
+CursorSwarm does not collect, sell, share, or transmit personal data. It does not require account sign-in and does not run background network services. Settings, presets, themes, and restore-related files are stored locally on the user's device.
+
+No login credentials are required for testing.
